@@ -1,4 +1,4 @@
-![Vendo quartos](assets/images/readme/header.png)
+![Vendo quartos](https://github.com/donizeti26/teste-API-de-gestao-hoteleira-Nivel-Junior/blob/main/assets/images/readme/header.png?raw=true)
 
 Este projeto foi desenvolvido como desafio técnico para criar uma API capaz de **importar dados de XML e gerenciar hotéis, quartos, tarifas e reservas**.
 
