@@ -13,7 +13,7 @@ O objetivo era demonstrar capacidade de construir uma aplicação **do zero** co
     - `/import-reservations` → importa reservas do arquivo `reservations.xml`.
 
 2. **CRUD básico**
-    - Criação, listagem e visualização de **hotéis, quartos, tarifas e reservas** via API.
+    - Listagem de **quartos** via API.
     - Para simplificação, neste desafio **edição e exclusão estão limitadas**, mas a estrutura permite fácil expansão.
 
 3. **Validação de disponibilidade**
