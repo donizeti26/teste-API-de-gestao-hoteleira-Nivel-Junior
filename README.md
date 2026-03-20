@@ -1,4 +1,4 @@
-# API de Gestão Hoteleira
+![Vendo quartos](assets/images/readme/header.png)
 
 Este projeto foi desenvolvido como desafio técnico para criar uma API capaz de **importar dados de XML e gerenciar hotéis, quartos, tarifas e reservas**.
 
@@ -14,7 +14,7 @@ O objetivo era demonstrar capacidade de construir uma aplicação **do zero** co
 
 2. **CRUD básico**
     - Criação, listagem e visualização de **hotéis, quartos, tarifas e reservas** via API.
-    - Para simplificação, neste desafio **edição e exclusão ainda não implementadas**, mas a estrutura permite fácil expansão.
+    - Para simplificação, neste desafio **edição e exclusão estão limitadas**, mas a estrutura permite fácil expansão.
 
 3. **Validação de disponibilidade**
     - Antes de criar uma reserva via API, o sistema verifica se o quarto está disponível no período solicitado.
@@ -22,7 +22,6 @@ O objetivo era demonstrar capacidade de construir uma aplicação **do zero** co
 
 4. **Armazenamento de dados importantes**
     - `external_id` → mantém o ID original do XML para referência.
-    - `total_guests` → soma todos os hóspedes de cada reserva (adultos + crianças).
 
 ### 🗃️ Estrutura do Projeto
 
@@ -48,15 +47,15 @@ routes/
 
 ### 🗒️ Descrição
 
-Controllers: recebem requisições HTTP e delegam a lógica para Services.
+**Controllers:** recebem requisições HTTP e delegam a lógica para Services.
 
-Models: representam tabelas do banco de dados.
+**Models:** representam tabelas do banco de dados.
 
-Services: contêm a lógica de negócio, como validação de disponibilidade de quartos.
+**Services:** contêm a lógica de negócio, como validação de disponibilidade de quartos.
 
-Migrations: definem a estrutura do banco SQLite.
+**Migrations:** definem a estrutura do banco SQLite.
 
-Routes/api.php: define as rotas públicas da API.
+**Routes/api.php:** define as rotas públicas da API.
 
 ### 🦺 Como testar
 
@@ -135,13 +134,13 @@ Se o quarto estiver ocupado, a API retorna _"Quarto indisponível"_.
 
 ### ⚠️ Observações
 
-XML de entrada: fornecido pelo desafio (hotels.xml, rooms.xml, rates.xml, reservations.xml).
+**XML de entrada:** fornecido pelo desafio (hotels.xml, rooms.xml, rates.xml, reservations.xml).
 
-Banco: SQLite (por simplicidade e portabilidade).
+**Banco:** SQLite (por simplicidade e portabilidade).
 
-Validação de disponibilidade: implementada no ReservationService.php.
+**Validação de disponibilidade:** implementada no ReservationService.php.
 
-Decisões de design:
+**Decisões de design:**
 
 Usei **external_id** para manter referência do XML.
 
@@ -161,4 +160,4 @@ Apesar de não ter experiência prévia com Laravel, consegui:
 
 - Testar rotas via Insomnia/Postman.
 
-O projeto demonstra capacidade de resolver um problema real mesmo aprendendo a tecnologia do zero.
+Nesse projeto busco demonstra capacidade de resolver um problema real mesmo aprendendo a tecnologia do zero.
