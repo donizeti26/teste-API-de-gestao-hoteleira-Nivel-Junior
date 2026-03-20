@@ -16,7 +16,7 @@ return new class extends Migration
             $table->bigInteger('external_id');
             $table->foreignId('hotel_id');
             $table->string('name');
-            $table->integer('inventary_count');
+            $table->integer('inventory_count');
             $table->timestamps();
         });
     }

@@ -22,7 +22,6 @@ class ImportController extends Controller
         }
 
         return 'Importação concluida';
-
     }
 
     public function importRooms()
@@ -104,6 +103,5 @@ class ImportController extends Controller
         }
 
         return 'Reservations importadas';
-
     }
 }
