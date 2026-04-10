@@ -26,6 +26,7 @@ class ReservationService
     }
 
     return Reservation::create([
+      'external_id' => $data['external_id'],
       'room_id' => $data['room_id'],
       'hotel_id' => $data['hotel_id'],
       'first_name' => $data['first_name'],
