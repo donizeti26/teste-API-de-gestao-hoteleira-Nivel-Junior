@@ -22,12 +22,12 @@ class ReservationController extends Controller
         $reservation = $this->service->createReservation($data);
 
         if (!$reservation) {
-            return response()->json(['message' => 'Quarto indisponível'], 400);
+            return response()->json(['message' => 'Quarto indisponivel'], 400);
         }
 
         return response()->json([
-            'message' => 'Reserva Criada com sucesso',
+            'message' => 'Reserva criada com sucesso',
             'data' => $reservation
-        ]);
+        ], 200);
     }
 }
